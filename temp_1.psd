@@ -1,0 +1,75 @@
+25
+3 1 1 ALGORITMO PRUEBAEXAMEN
+1 24
+
+pruebaExamen
+
+8 3 1 DIMENSION HORAS(5)
+1
+horas
+5
+6 4 1 TOTALHORASTRABAJADAS = 0
+totalHorasTrabajadas
+0
+6 5 1 HORASEXTRAS = 0
+horasExtras
+0
+7 7 1 ESCRIBIR 'Dime las horas semanales'
+1 1
+'Dime las horas semanales'
+5 8 1 LEER HORASSEMANALES
+1
+horasSemanales
+7 9 1 ESCRIBIR 'Dime el a cuanto cobras la hora'
+1 1
+'Dime el a cuanto cobras la hora'
+5 10 1 LEER COBROHORAS
+1
+cobroHoras
+7 11 1 ESCRIBIR 'Dime a cuanto cobras las horas extras'
+1 1
+'Dime a cuanto cobras las horas extras'
+5 12 1 LEER COBROEXTRAS
+1
+cobroExtras
+7 13 1 ESCRIBIR 'Dime las horas que has trabajo estos 5 días'
+1 1
+'Dime las horas que has trabajo estos 5 días'
+26 15 1 PARA I <- 1 HASTA 5 HACER
+15
+i
+1
+
+5
+7 16 1 ESCRIBIR 'Dime el día ', I
+1 2
+'Dime el día '
+i
+5 17 1 LEER HORAS(I)
+1
+horas[i]
+6 18 1 TOTALHORASTRABAJADAS = TOTALHORASTRABAJADAS + HORAS(I)
+totalHorasTrabajadas
+totalHorasTrabajadas+horas[i]
+28 19 1 FINPARA
+18 21 1 SI(TOTALHORASTRABAJADAS > HORASSEMANALES)
+21 23 (totalHorasTrabajadas>horasSemanales)
+19 22 1 ENTONCES
+6 22 1 HORASEXTRAS = TOTALHORASTRABAJADAS - HORASSEMANALES
+horasExtras
+totalHorasTrabajadas-horasSemanales
+6 23 1 TOTALHORASTRABAJADAS = TOTALHORASTRABAJADAS - HORASEXTRAS
+totalHorasTrabajadas
+totalHorasTrabajadas-horasExtras
+7 24 1 ESCRIBIR 'Salario total semanal es de --> ', TOTALHORASTRABAJADAS * COBROHORAS + HORASEXTRAS * COBROEXTRAS
+1 2
+'Salario total semanal es de --> '
+totalHorasTrabajadas*cobroHoras+horasExtras*cobroExtras
+20 25 1 SINO
+7 26 1 ESCRIBIR 'Salario total semanal es de --> ', TOTALHORASTRABAJADAS * COBROHORAS
+1 2
+'Salario total semanal es de --> '
+totalHorasTrabajadas*cobroHoras
+21 27 1 FINSI
+4 33 1 FINALGORITMO
+1 pruebaExamen

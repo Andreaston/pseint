@@ -1,0 +1,38 @@
+14
+3 1 1 ALGORITMO SIN_TITULO
+1 13
+
+sin_titulo
+
+7 3 1 ESCRIBIR 'Dame una palabra'
+1 1
+'Dame una palabra'
+5 4 1 LEER PALABRA
+1
+palabra
+6 6 1 PALABRAINVERTIDA <- ''
+palabraInvertida
+''
+26 8 1 PARA I <- LONGITUD(PALABRA) HASTA 1 CON PASO -1 HACER
+6
+i
+Longitud(palabra)
+-1
+1
+6 9 1 PALABRAINVERTIDA <- PALABRAINVERTIDA + SUBCADENA(PALABRA,I,1)
+palabraInvertida
+palabraInvertida+Subcadena(palabra,i,1)
+28 10 1 FINPARA
+18 12 1 SI PALABRA = PALABRAINVERTIDA ENTONCES
+10 12 palabra=palabraInvertida
+19 12 2 ENTONCES
+7 13 1 ESCRIBIR 'La palabra es palídroma'
+1 1
+'La palabra es palídroma'
+20 14 1 SINO
+7 15 1 ESCRIBIR 'La palabra no es palídroma'
+1 1
+'La palabra no es palídroma'
+21 16 1 FINSI
+4 18 1 FINALGORITMO
+1 sin_titulo
